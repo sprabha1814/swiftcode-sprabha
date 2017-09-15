@@ -2,7 +2,7 @@ package services;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import data.AgentResponse;
-import play.api.libs.ws.WS;
+import play.libs.ws.WS;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;
 
@@ -30,6 +30,6 @@ public class AgentService {
         catch (Exception e){
          e.printStackTrace();
         }
-         return agentresponse;
+         return agentResponse;
     }
 }
